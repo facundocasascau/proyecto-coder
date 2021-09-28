@@ -62,7 +62,7 @@ class Product {
         }
 
         const producto = productPersistencia.find(Number(id));
-        
+
         if (!producto) {
             return res.status(400).json({
                 msg: "El producto no existe"
